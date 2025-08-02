@@ -4,3 +4,13 @@ python-decouple
 python-dotenv
 gitpython
 https://github.com/New-dev0/Telethon-Patch/archive/main.zip
+safety
+Pillow
+telegraph
+aiohttp
+numpy
+bs4
+qrcode
+pytz
+akipy
+yt-dlp
