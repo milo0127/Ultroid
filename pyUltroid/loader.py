@@ -66,9 +66,8 @@ class Loader:
                 continue
             except Exception as exc:
                 modl = None
-                self._logger.error(f"pyUltroid - {self.key} - ERROR - {plugin}")
-                self._logger.exception(exc)
-                continue
+                self._logger.error(f"Error loading plugin {plugin}: {exc}")
+                continue  # <-- Ignora el error y continúa
             if _single and log:
                 self._logger.info(f"Successfully Loaded {plugin}!")
             if callable(after_load):
